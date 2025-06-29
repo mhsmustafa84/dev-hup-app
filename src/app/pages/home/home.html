@@ -1,0 +1,308 @@
+<div class="home-page">
+  <!-- Hero Section with 3D Effects -->
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+      <div class="gradient-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Welcome to the</span>
+          <span class="title-line highlight">Future of</span>
+          <span class="title-line">Digital Innovation</span>
+        </h1>
+        <p class="hero-subtitle">
+          We create cutting-edge digital experiences that transform businesses
+          and delight users. Our team combines creativity with technical
+          excellence to build the next generation of web applications.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">
+            <span class="btn-text">Get Started</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <button class="btn btn-secondary">
+            <span class="btn-text">Learn More</span>
+            <span class="btn-icon">▶</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="cube-container">
+          <div class="cube">
+            <div class="cube-face front">🚀</div>
+            <div class="cube-face back">💡</div>
+            <div class="cube-face right">⚡</div>
+            <div class="cube-face left">🎯</div>
+            <div class="cube-face top">🌟</div>
+            <div class="cube-face bottom">🔥</div>
+          </div>
+        </div>
+        <div class="floating-elements">
+          <div class="floating-element element-1">📱</div>
+          <div class="floating-element element-2">💻</div>
+          <div class="floating-element element-3">🎨</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Us</h2>
+        <p>Discover what makes us different</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon">
+            <div class="icon-3d">🎨</div>
+          </div>
+          <h3>Creative Design</h3>
+          <p>
+            Beautiful, intuitive interfaces that users love to interact with.
+          </p>
+          <div class="feature-hover">
+            <span>Learn More →</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <div class="icon-3d">⚡</div>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Optimized performance that keeps your users engaged and happy.</p>
+          <div class="feature-hover">
+            <span>Learn More →</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <div class="icon-3d">🔒</div>
+          </div>
+          <h3>Secure & Reliable</h3>
+          <p>Enterprise-grade security to protect your data and users.</p>
+          <div class="feature-hover">
+            <span>Learn More →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="zoom-in" data-stat-index="0">
+          <div class="stat-number">{{ getStatNumber(0) }}</div>
+          <div class="stat-label">{{ stats[0].label }}</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100" data-stat-index="1">
+          <div class="stat-number">{{ getStatNumber(1) }}</div>
+          <div class="stat-label">{{ stats[1].label }}</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200" data-stat-index="2">
+          <div class="stat-number">{{ getStatNumber(2) }}</div>
+          <div class="stat-label">{{ stats[2].label }}</div>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300" data-stat-index="3">
+          <div class="stat-number">{{ getStatNumber(3) }}</div>
+          <div class="stat-label">{{ stats[3].label }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Comprehensive solutions for your digital needs</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="flip-left">
+          <div class="service-icon">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Modern, scalable web applications built with cutting-edge
+            technologies.
+          </p>
+          <ul class="service-features">
+            <li>React & Angular</li>
+            <li>Node.js Backend</li>
+            <li>Database Design</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="service-icon">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>
+            Native and cross-platform mobile applications for iOS and Android.
+          </p>
+          <ul class="service-features">
+            <li>React Native</li>
+            <li>Flutter</li>
+            <li>Native iOS/Android</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="service-icon">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" />
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>
+            User-centered design that creates engaging and intuitive
+            experiences.
+          </p>
+          <ul class="service-features">
+            <li>User Research</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from real clients</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-right">
+          <div class="testimonial-content">
+            <p>
+              "Amazing work! The team delivered exactly what we needed and more.
+              Highly recommended!"
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍💼</div>
+            <div class="author-info">
+              <h4>John Smith</h4>
+              <span>CEO, TechCorp</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up">
+          <div class="testimonial-content">
+            <p>
+              "Professional, creative, and reliable. They transformed our vision
+              into reality perfectly."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩‍💼</div>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <span>Founder, StartupXYZ</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-left">
+          <div class="testimonial-content">
+            <p>
+              "Outstanding quality and attention to detail. The final product
+              exceeded our expectations."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍🔬</div>
+            <div class="author-info">
+              <h4>Mike Chen</h4>
+              <span>CTO, InnovationLab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>
+          Let's create something amazing together. Get in touch and let's
+          discuss your next big idea.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary btn-large">
+            <span class="btn-text">Start Your Project</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+          <button class="btn btn-secondary btn-large">
+            <span class="btn-text">Schedule a Call</span>
+            <span class="btn-icon">📞</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

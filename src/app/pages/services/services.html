@@ -1,0 +1,197 @@
+<div class="services-page">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+      <div class="gradient-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Our</span>
+          <span class="title-line highlight">Services</span>
+        </h1>
+        <p class="hero-subtitle">
+          We offer comprehensive digital solutions to help your business thrive in the modern world. 
+          From web development to strategic consulting, we've got you covered.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Service Categories</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="service-icons-grid">
+          <div class="service-icon-item" *ngFor="let service of services.slice(0, 6)">
+            <div class="icon-container">
+              <span class="service-icon">{{ service.icon }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filters -->
+  <section class="category-section">
+    <div class="container">
+      <div class="category-filters">
+        <div 
+          class="category-filter" 
+          *ngFor="let category of categories"
+          [class.active]="selectedCategory === category.id"
+          (click)="filterServices(category.id)"
+        >
+          <span class="category-icon">{{ category.icon }}</span>
+          <span class="category-name">{{ category.name }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section">
+    <div class="container">
+      <div class="services-grid">
+        <div 
+          class="service-card" 
+          *ngFor="let service of filteredServices; trackBy: trackByServiceId"
+          [class.popular]="service.popular"
+          [class.active]="activeService === service.id"
+          (mouseenter)="setActiveService(service.id)"
+          (mouseleave)="setActiveService(null)"
+        >
+          <div class="service-header">
+            <div class="service-icon">
+              <span class="icon">{{ service.icon }}</span>
+            </div>
+            <div class="service-badge" *ngIf="service.popular">
+              <span>Most Popular</span>
+            </div>
+          </div>
+
+          <div class="service-content">
+            <h3 class="service-title">{{ service.title }}</h3>
+            <p class="service-description">{{ service.description }}</p>
+            
+            <div class="service-features">
+              <h4>What's Included:</h4>
+              <ul class="features-list">
+                <li *ngFor="let feature of service.features">
+                  <span class="feature-icon">✓</span>
+                  {{ feature }}
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-price">
+              <span class="price">{{ service.price }}</span>
+            </div>
+
+            <div class="service-actions">
+              <button class="btn btn-primary">
+                <span>Get Started</span>
+                <span class="btn-icon">→</span>
+              </button>
+              <button class="btn btn-secondary">
+                <span>Learn More</span>
+                <span class="btn-icon">▶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="service-hover-effect"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Work</h2>
+        <p>Our proven process ensures successful project delivery</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery & Planning</h3>
+            <p>We start by understanding your needs, goals, and requirements to create a comprehensive project plan.</p>
+          </div>
+          <div class="step-icon">🔍</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Design & Prototyping</h3>
+            <p>Our design team creates wireframes and prototypes to visualize the solution before development.</p>
+          </div>
+          <div class="step-icon">🎨</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Development & Testing</h3>
+            <p>We build your solution using modern technologies and conduct thorough testing at every stage.</p>
+          </div>
+          <div class="step-icon">⚡</div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Launch & Support</h3>
+            <p>We deploy your project and provide ongoing support to ensure everything runs smoothly.</p>
+          </div>
+          <div class="step-icon">🚀</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>
+          Let's discuss your requirements and create something amazing together. 
+          Get in touch with our team today.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary btn-large">
+            <span class="btn-text">Start Your Project</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+          <button class="btn btn-secondary btn-large">
+            <span class="btn-text">Schedule a Call</span>
+            <span class="btn-icon">📞</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div> 
