@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-test-app": {
+    "dev-hup-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-test-app:build:production"
+              "buildTarget": "dev-hup-app:build:production"
             },
             "development": {
-              "buildTarget": "angular-test-app:build:development"
+              "buildTarget": "dev-hup-app:build:development"
             }
           },
           "defaultConfiguration": "development"

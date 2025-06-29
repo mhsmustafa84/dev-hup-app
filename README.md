@@ -91,7 +91,7 @@ A cutting-edge Angular application showcasing modern web development practices, 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd angular-test-app
+   cd dev-hup-app
    ```
 
 2. **Install dependencies**

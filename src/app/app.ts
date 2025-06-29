@@ -11,6 +11,6 @@ import { ScrollService } from './services/scroll.service';
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'angular-test-app';
+  protected title = 'dev-hup-app';
   constructor(private scrollService: ScrollService) {}
 }
